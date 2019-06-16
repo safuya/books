@@ -6,8 +6,13 @@ def time_to_pages(completed: timedelta, overall: timedelta, pages: int) -> float
 
 
 def str_to_time(time: str) -> timedelta:
-    hours, minutes = map(lambda x: float(x), time.split(':'))
-    return timedelta(hours=hours, minutes=minutes)
+    list_time = time.split(':')
+    if len(list_time) == 2:
+        minutes, seconds = map(lambda x: float(x), list_time)
+        hours = 0
+    else:
+        hours, minutes, seconds = map(lambda x: float(x), list_time)
+    return timedelta(hours=hours, minutes=minutes, seconds=seconds)
 
 
 def run(completed: str, overall: str, pages: int):
