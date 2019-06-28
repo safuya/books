@@ -17,3 +17,7 @@ def test_two_long_str_conversion():
 def test_three_long_str_conversion():
     time = '1:2:3'
     assert convert.str_to_time(time) == timedelta(hours=1, minutes=2, seconds=3)
+
+
+def test_run():
+    assert convert.run(completed='1:30:00', overall='3:00:00', pages=100) == 50
