@@ -1,6 +1,6 @@
 import sys
-from logbook import Logger, StreamHandler
+from logbook import Logger, RotatingFileHandler
 
 
-StreamHandler(sys.stdout).push_application()
-log = Logger('Logbook')
+RotatingFileHandler('log').push_application()
+log = Logger('Book')
