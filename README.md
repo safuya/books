@@ -1,14 +1,14 @@
-# Books
+# Audio2book
 
-This program is for converting an audiobook into pages read.
+This program is for converting an audiobooks pages read into print pages read.
 
 ## Usage
 
-To use this program, you must have Python 3.6 or higher installed. You must then install the
-requirements. It's recommended you do this under a virtual environment.
+To use this program, you must have Python 3.6 or higher installed. You may then install it through
+pip.
 
 ```
-pip install .
+pip install audio2book
 ```
 
 Run the program under Python as a module. Arguments to be supplied are:
@@ -24,7 +24,7 @@ audio2book -c 0:53 -o 10:58 -p 310
 You can also use the long arguments.
 
 ```
-audio2book --completed --overall 10:58 -p 310
+audio2book --completed 0:53 --overall 10:58 -p 310
 ```
 
 And you can get help.
@@ -39,7 +39,9 @@ A contribution guide is coming.
 
 ### Running the tests
 
-Make sure you have first installed the requirements:
+Pull the [source code](https://www.github.com/safuya/books).
+
+Then make sure you have first installed the requirements:
 
 ```
 pip install -r requirements.txt
