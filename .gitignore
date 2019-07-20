@@ -5,3 +5,6 @@ __pycache__
 .coverage
 .mutmut-cache
 *log*
+build
+dist
+audio2book.egg-info
