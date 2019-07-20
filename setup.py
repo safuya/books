@@ -5,9 +5,10 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name="audio2book",
-    version='0.1.0',
+    version='0.1.1',
     author="Robert Hughes",
     author_email='roberts.ginger.email@gmail.com',
+    install_requires=['logbook'],
     short_description='Converts audiobook completion into page completion',
     long_description=long_description,
     long_description_content_type='text/markdown',
