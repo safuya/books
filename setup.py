@@ -5,14 +5,18 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name="audio2book",
-    version='0.0.1',
+    version='0.1.0',
     author="Robert Hughes",
     author_email='roberts.ginger.email@gmail.com',
     short_description='Converts audiobook completion into page completion',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://www.github.com/safuya/books',
-    packages=setuptools.find_packages(),
+    packages=['book'],
+    package_dir={'book': 'book'},
+    entry_points={
+        'console_scripts': ['audio2book = book.__main__:main']
+    },
     classifiers=[
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
