@@ -1,0 +1,22 @@
+import setuptools
+
+with open('README.md', 'r') as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="audio2book",
+    version='0.0.1',
+    author="Robert Hughes",
+    author_email='roberts.ginger.email@gmail.com',
+    short_description='Converts audiobook completion into page completion',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    url='https://www.github.com/safuya/books',
+    packages=setuptools.find_packages(),
+    classifiers=[
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+        'Intended Audience :: End Users/Desktop'
+    ])
