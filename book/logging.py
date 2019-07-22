@@ -1,6 +1,6 @@
-import sys
+from pathlib import Path
 from logbook import Logger, RotatingFileHandler
 
 
-RotatingFileHandler('log').push_application()
+RotatingFileHandler(Path.home() / '.audio2book.log').push_application()
 log = Logger('Book')

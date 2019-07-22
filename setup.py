@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name="audio2book",
-    version='0.1.3',
+    version='0.1.4',
     author="Robert Hughes",
     author_email='roberts.ginger.email@gmail.com',
     install_requires=['logbook'],
