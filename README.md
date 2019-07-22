@@ -24,7 +24,7 @@ audio2book -c 0:53 -o 10:58 -p 310
 You can also use the long arguments.
 
 ```
-audio2book --completed 0:53 --overall 10:58 -p 310
+audio2book --completed 0:53 --overall 10:58 --pages 310
 ```
 
 And you can get help.
