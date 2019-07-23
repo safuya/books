@@ -1,17 +1,16 @@
 import setuptools
 
-with open('README.md', 'r') as fh:
+with open('README.rst', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="audio2book",
-    version='0.1.6',
+    version='0.1.7',
     author="Robert Hughes",
     author_email='roberts.ginger.email@gmail.com',
     install_requires=['logbook'],
     description='Converts audiobook completion into page completion',
     long_description=long_description,
-    long_description_content_type='text/markdown',
     url='https://www.github.com/safuya/books',
     packages=['book'],
     package_dir={'book': 'book'},
