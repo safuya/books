@@ -18,7 +18,7 @@ def str_to_time(time: str) -> timedelta:
 
 def run(completed: str, overall: str, pages: int):
     completed_td = str_to_time(time=completed)
-    log.notice(f'Parsed completed_td as: {completed_td}')
+    log().notice(f'Parsed completed_td as: {completed_td}')
     overall_td = str_to_time(time=overall)
-    log.notice(f'Parsed overall_td as: {overall_td}')
+    log().notice(f'Parsed overall_td as: {overall_td}')
     return time_to_pages(completed_td, overall_td, pages)
