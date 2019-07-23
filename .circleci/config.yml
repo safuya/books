@@ -44,16 +44,12 @@ jobs:
     working_directory: ~/rep
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "requirements.txt" }}
       - run:
           name: install dependencies
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            pip install -r requirements.txt
-            pip install twine
+            pip install -r requirements-deploy.txt
       - run:
           name: init .pypirc
           command: |
