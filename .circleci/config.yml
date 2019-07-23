@@ -59,7 +59,7 @@ jobs:
           command: |
             echo "[pypi]" > ~/.pypirc
             echo "username = safuya" >> ~/.pypirc
-            echo "password = ${PYPI_PASSWORD}" >> ~./pypirc
+            echo "password = ${PYPI_PASSWORD}" >> ~/.pypirc
       - run:
           name: make packages
           command: "python setup.py sdist bdist_wheel"
