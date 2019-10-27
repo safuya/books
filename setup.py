@@ -5,10 +5,9 @@ with open('README.rst', 'r') as fh:
 
 setuptools.setup(
     name="audio2book",
-    version='0.1.7',
+    version='0.2.0',
     author="Robert Hughes",
     author_email='roberts.ginger.email@gmail.com',
-    install_requires=['logbook'],
     description='Converts audiobook completion into page completion',
     long_description=long_description,
     url='https://www.github.com/safuya/books',

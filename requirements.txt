@@ -1,4 +1,3 @@
-logbook
 pytest
 pytest-cov
 pytest-random-order
